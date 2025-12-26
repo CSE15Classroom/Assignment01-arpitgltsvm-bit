@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f1f3f6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2874f0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .search-box {
+            flex: 1;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            outline: none;
+        }
+
+        .nav-links {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        /* Categories */
+        .categories {
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+        }
+
+        .categories div {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: green;
+            font-weight: bold;
+        }
+
+        .product button {
+            background: #ff9f00;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Flipkart</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Login</a>
+            <a href="#">Cart</a>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <div>Mobiles</div>
+        <div>Fashion</div>
+        <div>Electronics</div>
+        <div>Home</div>
+        <div>Appliances</div>
+        <div>Travel</div>
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+
+        <div class="product">
+            <img src="Screenshot 2025-12-02 161656.png">
+            <h3>Smartphone</h3>
+            <p>₹12,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Screenshot 2025-12-26 185202.png">
+            <h3>Headphones</h3>
+            <p>₹1,499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Screenshot 2025-12-02 154912.png">
+            <h3>Laptop</h3>
+            <p>₹45,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="Screenshot 2025-12-26 185241.png">
+            <h3>Shoes</h3>
+            <p>₹2,299</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
